@@ -1,37 +1,71 @@
 /* Header */
 
 .header {
-  display: flex;
-  align-items: center;
   position: absolute;
-  z-index: 999;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
+ 
+  @media screen and (min-width: $tablet) {
+    position: fixed;
+    transition: background-color $anim-slow, backdrop-filter $anim-slow;
+    background-color: rgba(25, 28, 38, 0.7);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &--no-transparency {
+    background-color: rgba(25, 28, 38, 0.7);
+    backdrop-filter: blur(3px);
+  }
 
   &__logo {
     margin-top: 40px;
     fill: $white-color;
+
+    @media screen and (min-width: $tablet) {
+      margin-left: 11px;
+      margin-top: 0;
+      margin-top: 32px;
+      margin-bottom: 32px;
+      // fill: $title-color;
+    }
   }
 
+  // &__btn {
+  // animation: heartbeat 5s ease-in-out infinite both;
+  // }
 
 }
 
 .main-menu {
-  margin-left: 132px;
-  display: none;
+  margin-left: 60px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   &__list {
     display: flex;
+    align-items: center;
   }
 
   &__item {
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-right: 16px;
     }
   }
 
   &__link {
+    position: relative;
+    display: block;
+    padding-top: 52px;
+    padding-bottom: 52px;
+
     font-weight: 600;
     font-size: 12px;
     line-height: calc(16 / 12);
@@ -39,26 +73,74 @@
     
     color: $white-color;
 
+    @include transition(color);
+    
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 20%;
+    
+      transform: translateX(-50%) scaleX(0.3);
+    
+      display: block;
+      width: 95%;
+      height: 4px;
+    
+      border-radius: 2px;
+    
+      background-color: $link-color;
+      opacity: 0;
+      transition: transform $anim-fast, opacity $anim-fast;
+    }
+
+    
+    &:hover, &:focus {
+      color: $link-color;
+
+      &:after {
+        transform: translateX(-50%) scaleX(1);
+        opacity: 1;
+      }
+
+    }
 
   }
 
 }
 
 .contacts {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  padding-top: 40px;
   margin-left: auto;
-  margin-right: 5px;
-  display: none;
+  
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   &__phone {
-    margin-right: 40px;
     font-weight: 600;
     font-size: 12px;
     line-height: calc(16 / 12);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    
     color: $white-color;
+
+    margin-top: 20px;
+
+    order: 1;
+
+    @include transition(color);
+
+    &:hover, &:focus {
+      color: $link-color;
+    }
   }
 
+  
 }
 

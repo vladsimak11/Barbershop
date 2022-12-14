@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 44px;
+  padding-bottom: 44px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    &:first-child {
+      &:before {
+        content: '';
+        width: 60px;
+        height: 1px;
+        margin-right: 40px;
+        background-color: $title-color;
+      }
+    }
+  }
+
+  &__item {
+    
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+  }
+
+  
+  &__link {
+    @include fonts(11px, 15px, 600, 0.2em, $title-color);
+    
+    }
+  
+}
+
+.copyright {
+  @include fonts(11px, 15px, 600, 0.2em, $gray-color);
+  margin-top: 20px;
+}
+

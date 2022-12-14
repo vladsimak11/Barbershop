@@ -38,7 +38,7 @@
   &__input, &__message {
     width: 100%;
     height: 24px;
-     
+
     font-size: 14px;
     color: $white-color;
     outline: unset;
@@ -50,7 +50,7 @@
     &::placeholder {
       opacity: 0;
       font-size: 14px;
-      color: #9da4bd;
+      color: $gray-color;
       transition: opacity $anim-fast;
     }
 

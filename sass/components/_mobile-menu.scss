@@ -6,13 +6,17 @@
   cursor: pointer;
   border: none;
   margin-left: auto;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
   
 }
 
 .icon-menu {
   fill: $white-color;
 
-  @include transition( fill);
+  @include transition(fill);
 
   &:hover, &:focus {
     fill: $link-color;
@@ -22,7 +26,7 @@
 .icon-close {
   fill: $title-color;
 
-  @include transition( fill);
+  @include transition(fill);
 
   &:hover, &:focus {
     fill: $link-color;
@@ -40,7 +44,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 337px;
+  width: 100%;
   height: 100vh;
   padding-top: 118px;
   padding-left: 40px;
@@ -49,6 +53,10 @@
   background-color: $white-color;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+
+  @media screen and (min-width: $mobile) {
+    width: 337px;
+  }
 
   &.is-open {
     transform: translateX(0);
@@ -108,7 +116,7 @@
   
   &__item {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 
     &:not(:last-child) {
       margin-bottom: 24px;

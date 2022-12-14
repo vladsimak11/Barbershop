@@ -1,0 +1,94 @@
+.connection {
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  background: #111319;
+  
+  background-image: url("../images/connection/connection_md@1x.png");
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: url("../images/connection/connection_md@2x.png");
+  }
+
+  &__title  {
+    font-family: 'Raleway', sans-serif;
+    @include fonts(42px, 49px, 700, 0.05em, $white-color);
+    text-align: center;
+    margin-bottom: 44px;
+  }
+
+  &__address {
+    margin-bottom: 44px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:first-child {
+      .connection__icon {
+        margin-top: 6px;
+        align-self: baseline;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 16px;
+  }
+
+  &__location {
+    font-weight: 700;
+  }
+
+  &__phone, &__mail, &__location {
+    font-weight: 400;
+    color: $gray-color;
+    font-style: normal;
+
+    &:hover, &:focus {
+      color: $link-color;
+    }
+  }
+
+  &__location {
+    font-weight: 700;
+  }
+
+  &__mail {
+    text-decoration: underline;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-transform: uppercase;
+
+    color: $white-color;
+
+    &:before {
+      content: '';
+      width: 60px;
+      height: 1px;
+      margin-right: 20px;
+      background-color: rgba(157, 164, 189, 0.4);
+    }
+  }
+
+  &__schedule {
+    color: $gray-color;
+  }
+}

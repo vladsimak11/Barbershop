@@ -3,6 +3,7 @@
 .barbers {
   padding-top: 84px;
   padding-bottom: 84px;
+  background-color: #f7f7f7;
 
   &__title {
     font-family: 'Raleway', sans-serif;
@@ -39,7 +40,7 @@
   }
 
   &__item {
-    background-color: #f7f7f7;
+ 
     &:not(:last-child) {
       margin-bottom: 64px;
     }

@@ -1,10 +1,13 @@
 @import 'utils/variables';
 
 @import 'base/base';
+@import 'base/container';
 
-@import 'components/typography';
+@import 'base/typography';
 
-@import 'components/button';
+@import 'base/animations';
+
+@import 'base/button';
 
 @import 'components/header';
 @import 'components/hero';
@@ -14,8 +17,9 @@
 @import 'components/barbers';
 @import 'components/gallery';
 @import 'components/booking';
-@import 'components/details';
+@import 'components/connection';
 @import 'components/footer';
 
 @import 'components/mobile-menu';
+@import 'components/modal';
 

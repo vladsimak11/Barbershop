@@ -33,11 +33,24 @@
     padding: 20px 36px;
     background: #f7f7f7;
 
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+
+      @media screen and (min-width: $mobile) {
+        margin-bottom: 0;
+      }
+      
+    }
 
     &:nth-child(2n) {
-      margin-top: 30px;
-      margin-left: 30px
+      
+      @media screen and (min-width: $mobile) {
+        margin-top: 30px;
+        margin-left: 30px
+      }
   
     }
   }
