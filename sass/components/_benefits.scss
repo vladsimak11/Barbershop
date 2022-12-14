@@ -1,0 +1,75 @@
+/*Benefits*/
+
+.benefits {
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    letter-spacing: 0.05em;
+
+    color: $title-color;
+
+    margin-bottom: 20px;
+
+  }
+
+  &__right-side {
+    margin-top: 44px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  &__item {
+    width: 194px;
+    min-height: 133px;
+    padding: 20px 36px;
+    background: #f7f7f7;
+
+    text-align: center;
+
+    &:nth-child(2n) {
+      margin-top: 30px;
+      margin-left: 30px
+  
+    }
+  }
+
+  &__quantity {
+    @include fonts(42px, 57px, 700, 0.05em, $title-color);
+    text-align: center;
+    margin-bottom: 4px;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '+';
+      position: absolute;
+      top: 7px;
+      right: -15px;
+
+      font-weight: 600;
+      font-size: 16px;
+      line-height: calc(22 / 16);
+      text-align: center;
+      color: $link-color;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-align: center;
+    
+    color: $title-color;
+  }
+
+}

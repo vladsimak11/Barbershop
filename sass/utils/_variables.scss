@@ -1,0 +1,11 @@
+$white-color: #ffffff;
+$text-color: #555555;
+$title-color: #303030;
+$link-color: #ff6c00;
+@mixin transition($property...) {
+  transition-property: $property;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
+$anim-fast: 300ms ease-out;

@@ -1,0 +1,92 @@
+/* Booking */
+
+.booking {
+    background-color: #191c26;
+    padding-top: 84px;
+    padding-bottom: 84px;
+ 
+
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    @include fonts(42px, 49px, 700, 0.05em, $white-color);
+    text-align: center;
+    margin-bottom: 44px;
+  }
+
+
+  &__group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 44px;
+  }
+
+  &__field  {
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 44px;
+    }
+  }
+
+  &__input {
+    &+ .booking__label::after {
+      content: '*';
+      color: $link-color;
+    }
+  }
+
+  &__input, &__message {
+    width: 100%;
+    height: 24px;
+     
+    font-size: 14px;
+    color: $white-color;
+    outline: unset;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    transition: border-color $anim-fast;
+
+    &::placeholder {
+      opacity: 0;
+      font-size: 14px;
+      color: #9da4bd;
+      transition: opacity $anim-fast;
+    }
+
+    &:focus {
+      &::placeholder {
+        opacity: 1;
+        transition-delay: 200ms;
+      }
+    }
+
+    &:focus, &:not(:placeholder-shown){
+      border-color: $white-color;
+
+      &+ .booking__label {
+        transform: translateY(-100%) scale(0.8);
+        color: $white-color;
+      }
+
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include fonts(11px, 15px, 600, 0.1em, rgba(157, 164, 189, 0.4));
+    text-transform: uppercase;
+
+    transform-origin: left;
+    transition: transform $anim-fast, color $anim-fast;
+  }  
+
+  &__message {
+    height: 76px;
+    resize: none;
+  }
+
+}

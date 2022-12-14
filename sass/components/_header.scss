@@ -1,0 +1,64 @@
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__logo {
+    margin-top: 40px;
+    fill: $white-color;
+  }
+
+
+}
+
+.main-menu {
+  margin-left: 132px;
+  display: none;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.1em;
+    
+    color: $white-color;
+
+
+  }
+
+}
+
+.contacts {
+  margin-left: auto;
+  margin-right: 5px;
+  display: none;
+
+  &__phone {
+    margin-right: 40px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    color: $white-color;
+  }
+
+}
+

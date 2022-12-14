@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbershop</title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header">
+      <a class="header__logo" href="" aria-label="Barbershop logo">
+        <svg class="icon-logo" width="68" height="56">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <button
+        class="menu-toggle  js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        >
+        <svg
+        class="icon-menu" 
+        width="40" 
+        height="40"
+        aria-label="Mobile menu transition"
+        >
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+  
+      <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="">
+              About
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="">
+              Services and prices
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="">
+              Barbershop
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+  
+      <div class="contacts">
+        <a class="contacts__phone" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="button">Online-booking</button>
+      </div>
+    </div>
+  </header>
+  <!-- Main block -->
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__container">
+        <ul class="hero__left-side">
+          <li class="hero__social">
+            <a class="hero__link" href="">
+              Instagram
+            </a>
+          </li class="hero__social">
+          <li>
+            <a class="hero__link" href="">
+              Youtube
+            </a>
+          </li>
+        </ul>
+        <div class="hero__right-side">
+          <p class="hero__pretitle">A hair salon for men in Kyiv</p>
+          <h1 class="hero__title">BarberShop</h1>
+          <p class="hero__text">
+            We are experts in trendy men’s haircuts.
+            We work quickly, carefully and with style.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <section class="about">
+      <div class="container">
+        <img class="about__img" src="./images/about-img_1.jpg" alt="Photo 1" width="270">
+        <img class="about__img" src="./images/about-img_2.jpg" alt="Photo 1" width="270">
+        <div class="about__right-side">
+          <p class="uppertitle">About</p>
+          <h2 class="title">Best Barbershop in your city</h2>
+          <p class="undertitle">If you want to add more confidence to your image, you should definitely visit us.</p>
+          <p class="text">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
+          <button type="button" class="button">ONLINE-BOOKING</button>
+        </div>      
+      </div>
+    </section>
+
+    <!-- Prices -->
+
+    <!-- <section class="prices">
+      <div class="container">
+        <p class="prices__pretitle">Spend your time with the best masters</p>
+        <h2 class="prices__title">Services and prices</h2>
+        <div class="prices__block">
+          <ul class="prices__list">
+            <li class="prices__item">
+              <p class="prices__service">Men’s haircut</p>
+              <p>from 300 uah.</p>
+            </li>
+            <li class="prices__item">
+              <p class="prices__service">Beard trim</p>
+              <p>from 300 uah.</p>
+            </li>
+            <li class="prices__item">
+              <p class="prices__service">Mustache trim</p>
+              <p>from 200 uah.</p>
+            </li>
+            <li class="prices__item">
+              <p class="prices__service">Straight razor shave</p>
+              <p>from 200 uah.</p>
+            </li>
+          </ul>
+          <ul class="prices__list">
+            <li class="prices__item">
+              <p class="prices__service">Trainee’s haircut</p>
+              <p>from 50 uah.</p>
+            </li>
+            <li class="prices__item">
+              <p class="prices__service">Haircut under the nozzle</p>
+              <p>from 200 uah.</p>
+            </li>
+            <li class="prices__item">
+              <p class="prices__service">Children’s haircut (0-12 y.o.)</p>
+              <p>from 300 uah.</p>
+            </li>
+            <li class="prices__item">
+              <p class="prices__service">Camouflage of gray hair</p>
+              <p>from 200 uah.</p>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="button button--second center">online-booking</button>
+      </div>
+    </section> -->
+
+    <!-- Our people -->
+
+    <!-- <section class="benefits">
+      <div class="container">
+        <div class="benefits__left-side">
+          <p class="uppertitle">Old traditional school</p>
+          <h2 class="benefits__title">¿Why people come to us?</h2>
+          <p>Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
+        </div>
+
+        <div class="benefits__right-side">
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <p class="benefits__quantity">600</p>
+              <p class="benefits__text">Satisfied customers per day</p>
+            </li>
+            <li class="benefits__item">
+              <p class="benefits__quantity">50</p>
+              <p class="benefits__text">Awards for excellent service</p>
+            </li>
+            <li class="benefits__item">
+              <p class="benefits__quantity">20</p>
+              <p class="benefits__text">Kyiv’s best 
+                barbers</p>
+            </li>
+            <li class="benefits__item">
+              <p class="benefits__quantity">100</p>
+              <p class="benefits__text">Gifts for regular customers</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Our barbers -->
+
+    <!-- <section class="barbers">
+      <div class="container">
+        <p class="uppertitle">For true enjoyers of the atmosphere</p>
+        <h2 class="barbers__title">Our barbers</h2>
+        <ul>
+          <li class="barbers__item">
+            <div class="barbers__thumb">
+              <img
+                srcset="
+                ./images/barbers/barbers-418-1.jpg 418w,
+                ./images/barbers/barbers-836-1.jpg 836w
+                "
+                sizes="(min-width: 480px) 418px, 100vw" 
+                src="./images/barbers/barbers-418-1.jpg" 
+                alt="Barber John Smith"  
+                width="418"
+              >
+              <div class="barbers__overlay">
+                <p class="barbers__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat
+                  dicta quos perferendis ad quaerat molestias libero dolores deserunt
+                </p>
+              </div>
+            </div>
+            <h3 class="barbers__name">John Smith</h3>
+            <p class="barbers__position">Extreme Barber</p>
+            <ul class="barbers-social">
+              <li>
+                <a class="barbers-social__link" href="">
+                  <svg class="barbers-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="barbers-social__link" href="">
+                  <svg class="barbers-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="barbers-social__link" href="">
+                  <svg class="barbers-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="barbers-social__item">
+                <a class="barbers-social__link" href="">
+                  <svg class="barbers-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="barbers__item">
+            <div class="barbers__thumb">
+              <img
+                srcset="
+                ./images/barbers/barbers-418-2.jpg 418w,
+                ./images/barbers/barbers-836-2.jpg 836w
+                "
+                sizes="(min-width: 480px) 418px, 100vw" 
+                src="./images/barbers/barbers-418-2.jpg" 
+                alt="Barber John Smith"  
+                width="418"
+              >
+              <div class="barbers__overlay">
+                <p class="barbers__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odio asperiores veritatis perferendis cumque praesentium, molestiae quibusdam exercitationem in nobis!
+                </p>
+              </div>
+            </div>
+            <h3 class="barbers__name">Michele Doe</h3>
+            <p class="barbers__position">Extreme Barber</p>
+            <ul class="barbers-social">
+              <li>
+                <a class="barbers-social__link" href="">
+                  <svg class="barbers-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="barbers-social__link" href="">
+                  <svg class="barbers-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="barbers-social__link" href="">
+                  <svg class="barbers-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="barbers-social__item">
+                <a class="barbers-social__link" href="">
+                  <svg class="barbers-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="barbers__item">
+            <div class="barbers__thumb">
+              <img 
+              srcset="
+              ./images/barbers/barbers-418-3.jpg 418w,
+              ./images/barbers/barbers-836-3.jpg 836w
+              "
+              sizes="(min-width: 480px) 418px, 100vw" 
+              src="./images/barbers/barbers-418-3.jpg" 
+              alt="Barber Alan Black" 
+              width="418">
+              <div class="barbers__overlay">
+                <p class="barbers__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores atque, veniam obcaecati, voluptatum a libero earum quam amet consequuntur doloremque minus nesciunt mollitia eaque quibusdam!
+                </p>
+              </div>
+            </div>
+            <h3 class="barbers__name">Alan Black</h3>
+            <p class="barbers__position">Extreme Barber</p>
+            <ul class="barbers-social">
+              <li>
+                <a class="barbers-social__link" href="">
+                  <svg class="barbers-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="barbers-social__link" href="">
+                  <svg class="barbers-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="barbers-social__link" href="">
+                  <svg class="barbers-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="barbers-social__item">
+                <a class="barbers-social__link" href="">
+                  <svg class="barbers-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section> -->
+
+    <!-- Gallery -->
+
+    <!-- <section class="gallery">
+      <div class="container">
+        <p class="gallery__uppertitle">In Latin, "barba" means "beard"</p>
+        <h2 class="visually-hidden">Gallery</h2>
+        <ul class="gallery__list">
+          <li>
+            <img
+              srcset="
+              ./images/gallery/gallery-418-1.jpg 418w,
+              ./images/gallery/gallery-836-1.jpg 836w
+              "
+              sizes="(min-width: 480px) 418px, 100vw" 
+              src="./images/gallery/gallery-418-1.jpg" 
+              alt="Photo from gallery number 1"  
+              width="418"
+            >
+          </li>
+          <li>
+            <img
+              srcset="
+              ./images/gallery/gallery-418-2.jpg 418w,
+              ./images/gallery/gallery-836-2.jpg 836w
+              "
+              sizes="(min-width: 480px) 418px, 100vw" 
+              src="./images/gallery/gallery-418-2.jpg" 
+              alt="Photo from gallery number 2"  
+              width="418"
+            >
+          </li>  
+          <li>
+            <img
+              srcset="
+              ./images/gallery/gallery-418-3.jpg 418w,
+              ./images/gallery/gallery-836-3.jpg 836w
+              "
+              sizes="(min-width: 480px) 418px, 100vw" 
+              src="./images/gallery/gallery-418-3.jpg" 
+              alt="Photo from gallery number 3"  
+              width="418"
+            >
+          </li>
+          <li>
+            <img
+            srcset="
+            ./images/gallery/gallery-418-4.jpg 418w,
+            ./images/gallery/gallery-836-4.jpg 836w
+            "
+            sizes="(min-width: 480px) 418px, 100vw" 
+            src="./images/gallery/gallery-418-4.jpg" 
+            alt="Photo from gallery number 4"  
+            width="418"
+          >
+          </li>  
+
+        </ul>
+      </div>
+    </section> -->
+
+    <!-- Booking-->
+
+    <section class="booking">
+      <div class="container">
+        <h2 class="booking__title">Online-booking</h2>
+          <form class="booking__form">
+            <div class="booking__group">
+              <label class="booking__field">
+                <input
+                  class="booking__input"
+                  type="text"
+                  name="name"
+                  placeholder="Vladyslav Simak"
+                  required
+                  minlength="2"
+                />
+                <span class="booking__label">Name</span>
+              </label>
+              <label class="booking__field">
+                <input
+                  class="booking__input"
+                  type="tel"
+                  name="phone"
+                  placeholder="+38 (063) 728-45-67"
+                  required
+                />
+                <span class="booking__label">Phone</span>
+              </label>
+            </div>
+            <label class="booking__group">
+              <textarea
+                class="booking__message"
+                name="message"
+                rows="5"
+                placeholder="Type your message..."
+              ></textarea>
+              <span class="booking__label">Message</span>
+            </label>
+            <button class="button button--theme-dark center" type="submit">send</button>
+          </form>
+      </div>
+    </section>
+    
+  </main>
+
+ 
+  <div>
+
+    
+
+   
+      
+      <!-- Contacts -->
+
+      <div class="container details--container">
+        <section>
+
+        </section>
+      </div>
+
+    </div>
+
+  <!-- Footer -->
+
+  <footer>
+      <p>&copy; Copyright 2022</p>
+      <ul>
+        <li>
+          <a href="" target="_blank" rel="noopener noreferrer nofollow">
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank" rel="noopener noreferrer nofollow">
+            Youtube
+          </a>
+        </li>
+      </ul>
+  </footer>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="icon-close"
+        width="40" 
+        height="40"
+        aria-label="Перехід мобільного меню"
+      >
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li class="mobile-menu__item"><a href="" class="mobile-menu__link">About</a></li>
+      <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Services and prices</a></li>
+      <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Barbers</a></li>
+      <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Contacts</a></li>
+    </ul>
+
+    <div class="mobile-contacts">
+      <a href="tel:+380961111111" class="mobile-contacts__phone">+38 044 111 11 11</a>
+      <button type="button" class="button button--first">online-booking</button>
+    </div>
+    <ul class="mobile-social">
+      <li class="mobile-social__item"><a href="" class="mobile-social__link">Instagram</a></li>
+      <li class="mobile-social__item"><a href="" class="mobile-social__link">Youtube</a></li>
+    </ul>
+
+  </div>
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+  <script src="./js/mobile-menu.js"></script>
+</body>
+</html>
