@@ -55,3 +55,11 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+.mb-none {
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+}

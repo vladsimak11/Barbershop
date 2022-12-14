@@ -5,6 +5,10 @@
   padding-bottom: 84px;
   background-color: #f7f7f7;
 
+  @media screen and (min-width: $tablet) {
+    padding: 100px 120px 100px 120px;
+  }
+
   &__title {
     font-family: 'Raleway', sans-serif;
     @include fonts(42px, 49px, 700, 0.05em, $title-color);
@@ -56,7 +60,7 @@
     line-height: calc(25 / 18);
     text-align: center;
     color: $title-color;
-
+    font-weight: 400;
     margin-top: 30px;
   }
 

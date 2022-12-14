@@ -43,6 +43,10 @@
     padding: 40px;
   }
 
+  @media screen and (min-width: $tablet) {
+    width: 500px;
+  }
+
   @media screen and (min-width: $desktop) {
     width: 528px;
   }

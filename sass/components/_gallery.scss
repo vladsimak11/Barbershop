@@ -16,6 +16,10 @@
 
     color: $title-color;
 
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 44px;
+    }
+
     &::before {
       content: '';
       

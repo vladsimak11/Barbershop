@@ -96,6 +96,15 @@
             We are experts in trendy men’s haircuts.<br>
             We work quickly, carefully and with style.
           </p>
+
+          <ul class="slider mb-none">
+            <li>
+              <button class="slider__btn prev" disabled type="button">Back</button>
+            </li>
+            <li>
+              <button class="slider__btn next" type="button">Forward</button>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -103,9 +112,35 @@
     <!-- About -->
 
     <section class="about">
-      <div class="container">
-        <img class="about__img" src="./images/about-img_1.jpg" alt="Photo 1" width="270">
-        <img class="about__img" src="./images/about-img_2.jpg" alt="Photo 1" width="270">
+      <div class="container about__container">
+        <div class="about__left-side">
+          <ul class="about__list">
+            <li class="about__item">
+              <img
+              srcset="
+              ./images/about/about-330-1.jpg 330w,
+              ./images/about/about-660-1.jpg 660w
+              "
+              sizes="(min-width: 768px) 330px, 100vw" 
+              src="./images/about/about-330-1.jpg" 
+              alt="Photo about 1"
+              width="330"
+            >
+            </li>
+            <li class="about__item">
+              <img
+              srcset="
+              ./images/about/about-330-2.jpg 330w,
+              ./images/about/about-660-2.jpg 660w
+              "
+              sizes="(min-width: 768px) 330px, 100vw" 
+              src="./images/about/about-330-2.jpg" 
+              alt="Photo about 2"
+              width="330"
+              >
+            </li>
+          </ul>
+        </div>
         <div class="about__right-side">
           <p class="uppertitle">About</p>
           <h2 class="title">Best Barbershop in your city</h2>
@@ -210,12 +245,13 @@
               <img
                 srcset="
                 ./images/barbers/barbers-418-1.jpg 418w,
-                ./images/barbers/barbers-836-1.jpg 836w
+                ./images/barbers/barbers-836-1.jpg 836w,
+                ./images/barbers/barbers-450-1.jpg 450w,
+                ./images/barbers/barbers-900-1.jpg 900w
                 "
-                sizes="(min-width: 480px) 418px, 100vw" 
+                sizes="(min-width: 480px) 418px, (min-width: 768px) 450px, 100vw" 
                 src="./images/barbers/barbers-418-1.jpg" 
                 alt="Barber John Smith"  
-                width="418"
               >
               <div class="barbers__overlay">
                 <p class="barbers__text">
@@ -262,12 +298,13 @@
               <img
                 srcset="
                 ./images/barbers/barbers-418-2.jpg 418w,
-                ./images/barbers/barbers-836-2.jpg 836w
+                ./images/barbers/barbers-836-2.jpg 836w,
+                ./images/barbers/barbers-450-2.jpg 450w,
+                ./images/barbers/barbers-900-2.jpg 900w
                 "
-                sizes="(min-width: 480px) 418px, 100vw" 
+                sizes="(min-width: 480px) 418px, (min-width: 768px) 450px, 100vw" 
                 src="./images/barbers/barbers-418-2.jpg" 
                 alt="Barber John Smith"  
-                width="418"
               >
               <div class="barbers__overlay">
                 <p class="barbers__text">
@@ -311,14 +348,16 @@
           <li class="barbers__item">
             <div class="barbers__thumb">
               <img 
-              srcset="
-              ./images/barbers/barbers-418-3.jpg 418w,
-              ./images/barbers/barbers-836-3.jpg 836w
-              "
-              sizes="(min-width: 480px) 418px, 100vw" 
-              src="./images/barbers/barbers-418-3.jpg" 
-              alt="Barber Alan Black" 
-              width="418">
+                srcset="
+                ./images/barbers/barbers-418-3.jpg 418w,
+                ./images/barbers/barbers-836-3.jpg 836w,
+                ./images/barbers/barbers-450-3.jpg 450w,
+                ./images/barbers/barbers-900-3.jpg 900w
+                "
+                sizes="(min-width: 480px) 418px, (min-width: 768px) 450px, 100vw" 
+                src="./images/barbers/barbers-418-3.jpg" 
+                alt="Barber Alan Black" 
+              >
               <div class="barbers__overlay">
                 <p class="barbers__text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores atque, veniam obcaecati, voluptatum a libero earum quam amet consequuntur doloremque minus nesciunt mollitia eaque quibusdam!

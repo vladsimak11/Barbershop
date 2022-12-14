@@ -2,7 +2,33 @@
   padding-top: 84px;
   padding-bottom: 84px;
 
-  &__img {
+  @media screen and (min-width: $tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__left-side {
     display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  }
+
+  &__right-side {
+    @media screen and (min-width: $tablet) {
+      width: 330px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
