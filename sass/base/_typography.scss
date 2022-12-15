@@ -42,6 +42,11 @@
   font-family: 'Raleway', sans-serif;
   @include fonts(28px, 33px, 700, 0.05em, $title-color);
   margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 42px;
+    line-height: calc(49 / 42);
+  }
 }
 
 .undertitle {
@@ -65,5 +70,9 @@
   color: $text-color;
 
   margin-bottom: 44px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 42px;
+  }
 
 }

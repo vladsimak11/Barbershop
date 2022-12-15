@@ -31,7 +31,6 @@
 
     @media screen and (min-width: $tablet) {
       margin-left: 11px;
-      margin-top: 0;
       margin-top: 32px;
       margin-bottom: 32px;
       fill: $title-color;
@@ -154,9 +153,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $white-color;
-
     margin-top: 20px;
-
     order: 1;
 
     @include transition(color);

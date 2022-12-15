@@ -2,12 +2,24 @@
   padding-top: 44px;
   padding-bottom: 44px;
 
+  @media screen and (min-width: $tablet) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    display: flex;
+    align-items: center;
+  }
+
   &__list {
     display: flex;
     align-items: center;
     justify-content: end;
 
-    &:first-child {
+    @media screen and (min-width: $tablet) {
+      order: 1;
+      margin-left: auto;
+      
+    }
+
       &:before {
         content: '';
         width: 60px;
@@ -15,20 +27,27 @@
         margin-right: 40px;
         background-color: $title-color;
       }
-    }
+
+    
   }
 
   &__item {
-    
+    display: flex;
     &:not(:last-child) {
       margin-right: 40px;
     }
 
   }
 
-  
   &__link {
+    align-items: center;
     @include fonts(11px, 15px, 600, 0.2em, $title-color);
+
+    @include transition(color);
+
+    &:hover, &:focus {
+      color: $link-color
+    }
     
     }
   
@@ -37,5 +56,9 @@
 .copyright {
   @include fonts(11px, 15px, 600, 0.2em, $gray-color);
   margin-top: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 0;
+  }
 }
 
