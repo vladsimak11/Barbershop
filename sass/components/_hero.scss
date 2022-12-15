@@ -139,9 +139,6 @@
 
       margin-left: 0;
 
-      padding-top: 272px;
-      padding-bottom: 208px;
-      padding-left: 100px;
     }
   }
 
@@ -159,7 +156,7 @@
 
     color: rgba(157, 164, 189, 0.6);
 
-    // animation: top-to-bottom 1000ms ease 200ms both;
+    animation: top-to-bottom 1000ms ease 200ms both;
 
     &::before {
       content: '';
@@ -187,7 +184,7 @@
       line-height: calc(85 / 72);
     }
 
-    // animation: left-to-right 1000ms ease 1200ms both;
+    animation: left-to-right 1000ms ease 1200ms both;
   }
 
   &__text {
@@ -200,6 +197,6 @@
       line-height: calc(30 / 18);
     }
 
-    // animation: bottom-to-top 1000ms ease 2200ms both;
+    animation: bottom-to-top 1000ms ease 2200ms both;
   }
 }

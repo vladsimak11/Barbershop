@@ -1,0 +1,173 @@
+/*Connection */
+
+.detail {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+
+  background-color: #191c26;
+
+  background-position: left 0 bottom 0;
+    background-image: url(../images/details/detail_md@1x.png);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/details/detail_md@2x.png);
+    }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../images/details/detail_td@1x.png);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/details/detail_td@2x.png);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-position: left calc(50% + 423px) top 50%;
+    background-image: url(../images/details/detail_dd@1x.png);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/details/detail_dd@2x.png);
+    }
+  }
+
+  &--container {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.connection,
+.booking {
+  width: 100%;
+
+  @media screen and (min-width: $desktop) {
+    width: 570px;
+  }
+}
+
+.connection {
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 100px;
+  }
+
+  &__title  {
+    font-family: 'Raleway', sans-serif;
+    @include fonts(42px, 49px, 700, 0.05em, $white-color);
+    margin-bottom: 44px;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+
+  &__address {
+    margin-bottom: 44px;
+    font-style: normal;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:first-child {
+      .connection__icon {
+        margin-top: 6px;
+        align-self: baseline;
+      }
+
+  }
+
+}
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    color: $gray-color;
+  }
+
+  &__icon {
+    margin-right: 16px;
+  }
+
+  &__location {
+    font-weight: 700;
+  }
+
+  &__phone, &__mail, &__location {
+    font-weight: 400;
+    color: $gray-color;
+    font-style: normal;
+
+    @include transition(color);
+    
+    &:hover, &:focus {
+      color: $link-color;
+    }
+
+  }
+
+  &__mail {
+    text-decoration: underline;
+  }
+
+  &__group {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      display: flex;
+      gap: 50px
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-transform: uppercase;
+
+    color: $white-color;
+
+    &:before {
+      content: '';
+      width: 60px;
+      height: 1px;
+      margin-right: 20px;
+      background-color: rgba(157, 164, 189, 0.4);
+    }
+  }
+
+  &__schedule {
+    color: $gray-color;
+  }
+  
+}
+
+
+
+
+
+
+
+

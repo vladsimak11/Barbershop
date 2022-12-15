@@ -9,6 +9,17 @@
     padding: 100px 120px 100px 120px;
   }
 
+  @media screen and (min-width: $desktop) {
+    padding: 120px 0 120px 0;
+  }
+
+  &__container {
+    @media screen and (min-width: $desktop) {
+      padding-left: auto;
+      padding-right: auto;
+    }
+  }
+
   &__title {
     font-family: 'Raleway', sans-serif;
     @include fonts(42px, 49px, 700, 0.05em, $title-color);
@@ -43,10 +54,23 @@
     transition: transform $anim-fast;
   }
 
+  &__list {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      gap: 30px;
+    }
+    
+  }
+
   &__item {
- 
+
     &:not(:last-child) {
       margin-bottom: 64px;
+
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
+      }
+
     }
 
     &:hover .barbers__overlay {
