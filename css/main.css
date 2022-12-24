@@ -948,6 +948,11 @@ img {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
+  .prices__list:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
   .prices__list:first-child {
     background: -webkit-gradient(linear, left top, left bottom, from(#171A24), to(rgba(23, 26, 36, 0.2)));
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
